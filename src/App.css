@@ -1,0 +1,11 @@
+.main-content{
+  min-height: 50vh;
+}
+
+.login-text{
+  color: #800040;
+}
+
+.active{
+  font-weight: 800 !important;
+}
