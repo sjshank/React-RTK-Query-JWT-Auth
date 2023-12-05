@@ -42,7 +42,7 @@ const Login: React.FunctionComponent = (): JSX.Element => {
         //redirect user to profile page
         navigate("/profile");
       })
-      .catch((error) => alert("Invalid email or password"));
+      .catch(() => alert("Invalid email or password"));
   };
 
   const handleEmailChange: (evt: ChangeEvent<HTMLInputElement>) => void = (e: ChangeEvent<HTMLInputElement>) => {

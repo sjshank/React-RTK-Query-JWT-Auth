@@ -1,15 +1,10 @@
 import { Card, Stack } from "react-bootstrap";
-import {
-  selectCurrentToken,
-} from "../../store/auth/authSlice";
-import { useSelector } from "react-redux";
 import { useGetProfileQuery } from "../../services/profileApi";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Profile : React.FunctionComponent = () : JSX.Element => {
-  //derive token using selectore
-  const token = useSelector(selectCurrentToken);
+
   //Retrieve profile data 
   const { data, isLoading, isSuccess } = useGetProfileQuery({});
 
