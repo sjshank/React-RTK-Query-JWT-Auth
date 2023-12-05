@@ -62,7 +62,7 @@ const Login: React.FunctionComponent = (): JSX.Element => {
           <Form.Label className="fw-normal">Email address</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Enter Email"
+            placeholder="Use email as 'john@mail.com'"
             name="name"
             required
             value={email}
@@ -77,7 +77,7 @@ const Login: React.FunctionComponent = (): JSX.Element => {
           <Form.Label className="fw-normal">Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Enter Password"
+            placeholder="Use email as 'changeme'"
             name="password"
             required
             value={password}
